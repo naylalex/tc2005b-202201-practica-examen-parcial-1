@@ -47,38 +47,50 @@ NOTA: Solo se evaluarán exámenes recibidos hasta la hora señalada de conclusi
 Realiza las actividades descritas a continuación.
 
 # Node.js
-Inicializa un proyecto de node considerando los siguientes requerimientos
-* Instala por medio de `npm install --save-dev` los siguientes paquetes almacenados como dependencia de desarrollo:
-  * typescript
-  * webpack
-  * webpack-cli
-  * @webpack-cli/generators
+Inicializa un proyecto de node considerando los siguientes requerimientos:
+* Inicializa npm `npm init`
+* Instala TypeScript como dependencia de desarrollo `npm install typescript --save-dev`
+* Inicializa TypeScript y genera su archivo de configuración de TypeScript `npm run tsc -- --init`
+* Instala WebPack como dependencia de desarrollo `npm install --save-dev webpack`
+* Instala el CLI de WebPack como dependencia de desarrollo `npm install --save-dev webpack-cli`
+* Inicializa un proyecto de WebPack por medio de `npx webpack-cli init` considerando las propiedades listadas abajo 
+? Which of the following JS solutions do you want to use? Typescript
+? Do you want to use webpack-dev-server? Yes
+? Do you want to simplify the creation of HTML files for your bundle? Yes
+? Do you want to add PWA support? No
+? Which of the following CSS solutions do you want to use? CSS only
+? Will you be using PostCSS in your project? Yes
+? Do you want to extract CSS for every file? Only for Production
+? Do you like to install prettier to format generated configuration? Yes
+? Pick a package manager: npm
+[webpack-cli] ℹ INFO  Initialising project...
+ conflict package.json
+? Overwrite package.json? overwrite
+    force package.json
+   create src/index.ts
+ conflict README.md
+? Overwrite README.md? do not overwrite
+     skip README.md
+   create index.html
+   create webpack.config.js
+ conflict tsconfig.json
+ ? Overwrite tsconfig.json? do not overwrite
+     skip tsconfig.json
+   create postcss.config.js
 
-* Inicializa la configuración de TypeScript por medio de `tsc --init`
 
-* Añade la siguiente configuración a tsconfig.json:
+
+
+* [OPCIONAL] Añade la siguiente configuración a tsconfig.json:
   * "outDir": "./dist" 
 
-* Inicializa la configuración de webpack por medio de `npx webpack-cli init` considerando los siguientes aspectos:
-* ? Which of the following JS solutions do you want to use? Typescript
-* ? Do you want to use webpack-dev-server? Yes
-* ? Do you want to simplify the creation of HTML files for your bundle? Yes
-* ? Do you want to add PWA support? No
-* ? Which of the following CSS solutions do you want to use? CSS only
-* ? Will you be using PostCSS in your project? No
-* ? Do you want to extract CSS for every file? Only for Production
-* ? Do you like to install prettier to format generated configuration? Yes
-* ? Pick a package manager: npm
-* overwrite package.json : yes
-* overwrite README.md: no
-* overwrite tsconfig.json: no (en caso de aplicar)
 
-Añade los siguientes scripts a `package.json` en la sección `scripts`, recuerda que deben ir separados por coma:
+Verifica que `package.json` en la sección `scripts`, cuente con los siguientes:
 * `"tsc": "tsc"`
 * `"tsc:w: "tsc --watch"`
 
 # HTML
-Implementa los siguientes requerimientos en la página `src/index.html`:
+Implementa los siguientes requerimientos en la página `./index.html`:
 ## Declarativas html
 
 * Declarativa DOCTYPE html
@@ -98,7 +110,7 @@ Implementa los siguientes requerimientos en la página `src/index.html`:
 * `<div>` con atributo `id` igual a `divResult`
 
 # CSS
-Implementa los siguientes requerimientos en la hoja de estilo `style.css`
+Implementa los siguientes requerimientos en la hoja de estilo `./src/style.css`
 * estilo `palindrome` con los siguientes atributos:
   * tamaño de la fuente `large`
   * color `white`
@@ -109,7 +121,7 @@ Implementa los siguientes requerimientos en la hoja de estilo `style.css`
   * color de fondo `purple`
 
 # TypeScript
-Implementa los siguientes requerimientos en `src/checker.ts`:
+Implementa los siguientes requerimientos en el archivo nuevo `src/checker.ts`:
 * Implementa la función `isPalindrome` considerando:
   * Parámetro: `text` de tipo `string`
   * Tipo de retorno: `boolean`
@@ -122,7 +134,7 @@ isPalindrome('Anna') == true
 isPalindrome('México') == false
 ```
   
-* Exporta la función `isPalindrome` como `default` del archivo `checker.ts`.
+* Exporta la función `isPalindrome` como `default` del archivo `./src/checker.ts`.
 
 Implementa los siguientes requerimientos en `src/index.ts`:
 * Importa la hoja de estilo `style.css`
