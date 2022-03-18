@@ -63,6 +63,9 @@ Inicializa un proyecto de node considerando los siguientes requerimientos:
 * Instala el CLI de WebPack como dependencia de desarrollo `npm install --save-dev webpack-cli`
 
 * Inicializa un proyecto de WebPack por medio de `npx webpack-cli init` considerando las propiedades listadas abajo 
+
+Would you like to install '@webpack-cli/generators' package? (That will run 'npm install -D @webpack-cli/generators') (Y/n) Y
+
 ? Which of the following JS solutions do you want to use? Typescript
 
 ? Do you want to use webpack-dev-server? Yes
@@ -88,6 +91,8 @@ Inicializa un proyecto de node considerando los siguientes requerimientos:
     force package.json
    create src/index.ts
  conflict README.md
+
+ ? Overwrite src/index.ts? do not overwrite
 
 ? Overwrite README.md? do not overwrite
      skip README.md
@@ -167,6 +172,9 @@ Implementa los siguientes requerimientos en `src/index.ts`:
     * * Asigna al `div` el texto interno `The word is not palindrome`
     * Asigna al div la clase CSS `notPalindrome`
   * Añade un bloque de código donde se añada un EventListener al botón con id `button` con callback a la función `buttonSubmitClick`
+
+  # Ejecuta el proyecto
+  * Ejecuta el comando `npm run serve` para verificar tu implementación.
 
 # Fin de examen
 
