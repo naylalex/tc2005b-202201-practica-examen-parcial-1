@@ -63,6 +63,7 @@ Inicializa un proyecto de node considerando los siguientes requerimientos:
 * Instala el CLI de WebPack como dependencia de desarrollo `npm install --save-dev webpack-cli`
 
 * Inicializa un proyecto de WebPack por medio de `npx webpack-cli init` considerando las propiedades listadas abajo 
+
 ? Which of the following JS solutions do you want to use? Typescript
 
 ? Do you want to use webpack-dev-server? Yes
