@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 import isPalindrome from './checker';
 
 console.log("index.ts/start");
