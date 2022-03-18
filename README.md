@@ -99,7 +99,7 @@ Inicializa un proyecto de node considerando los siguientes requerimientos:
      skip tsconfig.json
    create postcss.config.js
 
-* Asegúrate de contar con un archivo `.gitignore` que incluya node_modules. Visual Code Web podría presentar una alerta accionable al respecto o puedes crear el archivo de forma manual.
+* Asegúrate de contar con un archivo `.gitignore` que incluya las carpetas node_modules y dist. Visual Code Web podría presentar una alerta accionable al respecto o puedes crear el archivo de forma manual.
 
 
 * [OPCIONAL] Añade la siguiente configuración a tsconfig.json:
@@ -186,6 +186,6 @@ Asegúrate que todos los cambios al código asociados con tu respuesta al examen
 * webpack.config.js
 
 
-Envía a tu profesor un correo con el enlace al repositorio remoto del examen.
+Responde a la pregunta en el examen de Canvas con en enlace de tu repositorio.
 
 Gracias por tu participación y compromiso.
